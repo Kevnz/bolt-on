@@ -1,7 +1,7 @@
 {
   "name": "bolt-on",
-  "version": "1.0.0-alpha-1",
-  "description": "Add things to a project",
+  "version": "1.0.0-alpha-2",
+  "description": "Bolt on things to a project",
   "main": "index.js",
   "bin": {
     "bolt": "./bin/bolt-on.js"
@@ -9,13 +9,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Kevnz/bolt-on.git"
+  },
   "author": "Kevin Isom <kevin.isom@gmail.com>",
   "license": "Unlicense",
   "dependencies": {
+    "@kev_nz/npm-programmatic": "0.0.8",
     "axios": "^0.16.1",
     "commander": "^2.9.0",
     "deep-assign": "^2.0.0",
-    "@kev_nz/npm-programmatic": "0.0.8",
+    "ora": "^1.2.0",
     "require-directory": "^2.1.1"
   },
   "devDependencies": {
