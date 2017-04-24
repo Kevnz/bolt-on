@@ -1,0 +1,28 @@
+{
+  "name": "bolt-on",
+  "version": "1.0.0-alpha-1",
+  "description": "Add things to a project",
+  "main": "index.js",
+  "bin": {
+    "bolt": "./bin/bolt-on.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "Unlicense",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "commander": "^2.9.0",
+    "deep-assign": "^2.0.0",
+    "@kev_nz/npm-programmatic": "0.0.8",
+    "require-directory": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}
