@@ -9,6 +9,7 @@ npm install bolt-on -g
 bolt on eslint
 bolt on babel
 bolt on webpack
+bolt on editorconfig
 ...
 ```
 
