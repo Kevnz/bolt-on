@@ -1,5 +1,4 @@
-
-const npm = require('npm-programmatic');
+const npm = require('@kev_nz/npm-programmatic');
 const writeFile = require('../utils/write-file');
 const editPackage = require('../utils/edit-package');
 
@@ -20,7 +19,6 @@ module.exports = path => npm.install(dependencies, {
 })
 .then(() => writeFile('.babelrc', babelrc))
 .then(() => {
-  console.log('edit package');
   const config = {
     scripts: {
       babel: 'babel src -d dist'

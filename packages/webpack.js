@@ -1,4 +1,4 @@
-const npm = require('npm-programmatic');
+const npm = require('@kev_nz/npm-programmatic');
 const writeFile = require('../utils/write-file');
 const editPackage = require('../utils/edit-package');
 
@@ -24,14 +24,14 @@ module.exports = {
   }
 };
 `;
-const dependencies = ['webpack', 'babel-loader'];
+
+const dependencies = ['webpack', 'babel-core', 'babel-loader'];
 module.exports = path => npm.install(dependencies, {
   cwd: path,
   saveDev: true
 })
 .then(() => writeFile('webpack.config.js', webpack))
 .then(() => {
-  console.log('webpack');
   const config = {
     scripts: {
       pack: 'BABEL_ENV=development webpack',
@@ -40,6 +40,6 @@ module.exports = path => npm.install(dependencies, {
   };
   return editPackage(config);
 })
-.catch((e) => {
-  console.log("Unable to install package", e);
+.catch((err) => {
+  console.log('Unable to install package', err);
 });

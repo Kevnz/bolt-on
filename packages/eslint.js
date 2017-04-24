@@ -1,4 +1,4 @@
-const npm = require('npm-programmatic');
+const npm = require('@kev_nz/npm-programmatic');
 const axios = require('axios');
 const writeFile = require('../utils/write-file');
 const editPackage = require('../utils/edit-package');
@@ -31,7 +31,6 @@ module.exports = (path) => {
       saveDev: true
     })
     .then(() => {
-      console.log("SUCCESS!");
       return writeFile('.eslintrc', eslintrc);
     })
     .then(() => {
@@ -46,7 +45,7 @@ module.exports = (path) => {
       console.log("Unable to install package");
     });
   })
-  .catch(function (error) {
+  .catch((error) => {
     console.log(error);
   });
 };
