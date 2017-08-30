@@ -15,6 +15,9 @@
   },
   "author": "Kevin Isom <kevin.isom@gmail.com>",
   "license": "Unlicense",
+  "keywords": [
+    "eslint", "webpack", "babel", "react", "editorconfig", "tools", "automation", "fatigue"
+  ],
   "dependencies": {
     "@kev_nz/npm-programmatic": "0.0.8",
     "axios": "^0.16.1",
