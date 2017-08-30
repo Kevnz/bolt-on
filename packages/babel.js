@@ -13,11 +13,11 @@ const babelrc = `{
 }
 `;
 const dependencies = ['babel-cli', 'babel-core', 'babel-plugin-transform-function-bind', 'babel-preset-es2015', 'babel-preset-es2016', 'babel-preset-es2017'];
-module.exports = path => npm.install(dependencies, {
+module.exports = (path, babelTemplate = babelrc) => npm.install(dependencies, {
   cwd: path,
   saveDev: true
 })
-.then(() => writeFile('.babelrc', babelrc))
+.then(() => writeFile('.babelrc', babelTemplate))
 .then(() => {
   const config = {
     scripts: {
