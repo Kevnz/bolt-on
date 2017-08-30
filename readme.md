@@ -1,10 +1,13 @@
 # Bolt On
 Tools to help fix the fatigue
+
 ## Install
 ```
 npm install bolt-on -g
 ```
+
 ### Using
+
 ```
 bolt on eslint
 bolt on babel
