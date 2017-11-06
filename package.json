@@ -16,7 +16,14 @@
   "author": "Kevin Isom <kevin.isom@gmail.com>",
   "license": "Unlicense",
   "keywords": [
-    "eslint", "webpack", "babel", "react", "editorconfig", "tools", "automation", "fatigue"
+    "eslint",
+    "webpack",
+    "babel",
+    "react",
+    "editorconfig",
+    "tools",
+    "automation",
+    "fatigue"
   ],
   "dependencies": {
     "axios": "^0.16.1",
