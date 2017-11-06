@@ -1,4 +1,4 @@
-const npm = require('@kev_nz/npm-programmatic');
+const npm = require('npm-programmatic');
 const axios = require('axios');
 const writeFile = require('../utils/write-file');
 const editPackage = require('../utils/edit-package');
@@ -19,7 +19,7 @@ module.exports = (path) => {
   .then((response) => {
     const currentVersion = response.data['dist-tags'].latest;
     const version = response.data.versions[currentVersion];
-    const deps = Object.keys(version.peerDependencies).map(key => {
+    const deps = Object.keys(version.peerDependencies).map((key) => {
       if (version.peerDependencies[key].indexOf('||') > -1) {
         return `${key}@${version.peerDependencies[key].split('|| ')[1]}`;
       }
