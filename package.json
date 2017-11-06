@@ -19,10 +19,10 @@
     "eslint", "webpack", "babel", "react", "editorconfig", "tools", "automation", "fatigue"
   ],
   "dependencies": {
-    "@kev_nz/npm-programmatic": "0.0.8",
     "axios": "^0.16.1",
     "commander": "^2.9.0",
     "deep-assign": "^2.0.0",
+    "npm-programmatic": "0.0.9",
     "ora": "^1.2.0",
     "require-directory": "^2.1.1"
   },
