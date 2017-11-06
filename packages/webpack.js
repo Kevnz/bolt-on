@@ -1,4 +1,4 @@
-const npm = require('@kev_nz/npm-programmatic');
+const npm = require('npm-programmatic');
 const writeFile = require('../utils/write-file');
 const editPackage = require('../utils/edit-package');
 
