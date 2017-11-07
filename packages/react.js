@@ -39,11 +39,13 @@ const babelrc = `{
 const reactDependencies = ['react', 'react-dom', 'babel-preset-react-app'];
 
 module.exports = path => babel(path, babelrc)
-  .then(() => webpack(path)).then(() => npm.install(reactDependencies, {
-    cwd: path,
-    saveDev: true
+  .then(() => webpack(path)).then(() => {
+    npm.install(reactDependencies, {
+      cwd: path,
+      save: true
+    });
   })
   .then(() => writeFile('webpack.config.js', config))
   .catch((err) => {
-    console.error('Unable to install package', err);
-  }));
+    console.error('Unable to bolt on react', err);
+  });
