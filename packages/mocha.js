@@ -15,7 +15,7 @@ module.exports = path => loadPackage()
       saveDev: true
     });
   })
-  .then(() => loadPackage()) // reload package to check scripts and and test command
+  .then(loadPackage) // reload package to check scripts and and test command
   .then((packageInfo) => {
     const scripts = Object.keys(packageInfo.scripts);
     const config = {
