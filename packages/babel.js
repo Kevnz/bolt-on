@@ -1,4 +1,4 @@
-const npm = require('@kev_nz/npm-programmatic');
+const npm = require('npm-programmatic');
 const writeFile = require('../utils/write-file');
 const editPackage = require('../utils/edit-package');
 
@@ -24,9 +24,10 @@ module.exports = (path, babelTemplate = babelrc) => npm.install(dependencies, {
       babel: 'babel src -d dist'
     }
   };
+
   return editPackage(config);
 })
 .catch((err) => {
-  console.log('eer', err);
-  console.log('Unable to install package');
+  console.error('Error when bolting on babel', err);
+  console.log('Unable to bolt on babel');
 });
