@@ -1,7 +1,7 @@
 {
   "name": "bolt-on",
-  "version": "1.0.0-alpha-4",
-  "description": "Bolt on things to a project",
+  "version": "1.0.0-alpha-5",
+  "description": "Bolt on functionality to a project",
   "main": "index.js",
   "bin": {
     "bolt": "./bin/bolt-on.js"
