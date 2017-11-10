@@ -27,7 +27,7 @@ module.exports = {
 };
 `;
 const babelrc = `{
-  "presets": ["es2015", "es2016", "es2017", "react", "react-app"],
+  "presets": ["env", "es2016", "es2017", "react", "react-app"],
   "plugins": ["transform-function-bind"],
   "env": {
     "test": {
